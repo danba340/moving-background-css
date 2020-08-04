@@ -1,4 +1,12 @@
-/* body {
+:root {
+  --blackish: #222;
+  --whiteish: #e5e5e5;
+  --red:  #ff5e56;
+  --yellow: #ffbd2e;
+  --green: #27c93f;
+  --backgroundSize: 300px;
+}
+body {
   box-sizing: border-box;
   margin:0;
   height: 100vh;
@@ -6,14 +14,15 @@
   display: grid;
   place-items: center;
   background-image: url(https://img.freepik.com/free-vector/seamless-pattern_1159-5086.jpg?size=626&ext=jpg);
-  background-size: 300px;
+  background-size: var(--backgroundSize);
   animation: movingBackground 10s linear infinite;
   color: #e5e5e5;
+
 }
 
 @keyframes movingBackground {
   from { background-position: 0 0; }
-  to { background-position: -300px -300px; }
+  to { background-position: var(--backgroundSize) var(--backgroundSize); }
 }
 
 body:before {
@@ -79,4 +88,4 @@ h1 {
 .twitter-logo {
   width: 32px;
   vertical-align: middle;
-} */
+}
