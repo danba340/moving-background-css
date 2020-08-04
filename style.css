@@ -1,33 +1,36 @@
-body {
-  font-family: 'Pacifico', Georgia, Times, 'Times New Roman', serif;
+/* body {
+  box-sizing: border-box;
+  margin:0;
   height: 100vh;
+  font-family: 'Pacifico', Georgia, Times, 'Times New Roman', serif;
   display: grid;
   place-items: center;
   background-image: url(https://img.freepik.com/free-vector/seamless-pattern_1159-5086.jpg?size=626&ext=jpg);
   background-size: 300px;
-  -webkit-animation: slide 10s linear infinite;
-  margin:0;
-  box-sizing: border-box;
+  animation: movingBackground 10s linear infinite;
+  color: #e5e5e5;
+}
+
+@keyframes movingBackground {
+  from { background-position: 0 0; }
+  to { background-position: -300px -300px; }
 }
 
 body:before {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: -1px;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.85);
-  transition: background .5s;
   z-index: 1;
 }
 
 h1 {
-  color: #e5e5e5;
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .center-piece {
@@ -35,7 +38,6 @@ h1 {
   height: 50vh;
   display: grid;
   place-items: center;
-  /* padding: 24px; */
   background: #222;
   border-radius: 8px;
   box-shadow: 5px 5px 50px 5px rgba(0,0,0,0.3);
@@ -70,15 +72,11 @@ h1 {
 .avatar {
   width: 150px;
   border-radius: 50%;
-  box-shadow: 0px 5px 20px 9px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.2);
+  border: 3px solid whitesmoke;
 }
 
 .twitter-logo {
-  width: 30px;
+  width: 32px;
   vertical-align: middle;
-}
-
-@-webkit-keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: -300px -300px; }
-}
+} */
